@@ -805,7 +805,7 @@
 		this.spectrum.ctx.fillRect(0, 0, this.w, this.h);
 
 		// Add the labels
-		this.el.append('<div class="label sim">Current universe</div><div class="label our">Our universe</div><div class="label scale"><div class="value">1&deg;</div></div>');
+		this.el.append('<div class="label sim">ഈ പ്രപഞ്ചം</div><div class="label our">നമ്മുടെ പ്രപഞ്ചം</div><div class="label scale"><div class="value">1&deg;</div></div>');
 
 		FFT.init(this.w);
 		FrequencyFilter.init(this.w, this.dl);
@@ -1416,7 +1416,7 @@
 
 		// Make option buttons
 		$('#options').append(
-			$('<a class="button ouruniverse" href="#">Our universe</a>').on('click',{me:this},function(e){
+			$('<a class="button ouruniverse" href="#">നമ്മുടെ പ്രപഞ്ചം</a>').on('click',{me:this},function(e){
 				e.preventDefault();
 				var sim = e.data.me;
 				sim.omega_b.setValue(sim.our.omega_b);
@@ -1424,7 +1424,7 @@
 				sim.omega_l.setValue(sim.our.omega_l);
 				sim.ps.loadData('omega_b',sim.omega_b.value,sim.omega_c.value,sim.omega_l.value);
 			}),
-			$('<a class="button matteronly" href="#">Normal matter only</a>').on('click',{me:this},function(e){
+			$('<a class="button matteronly" href="#">സാധാരണ മാറ്റര്‍ മാത്രം</a>').on('click',{me:this},function(e){
 				e.preventDefault();
 				var sim = e.data.me;
 				sim.omega_b.setValue(0.20);
@@ -1432,7 +1432,7 @@
 				sim.omega_l.setValue(0.00);
 				sim.ps.loadData('omega_b',sim.omega_b.value,sim.omega_c.value,sim.omega_l.value);
 			}),
-			$('<a class="button flatten" href="#">Flatten</a>').on('click',{me:this},function(e){
+			$('<a class="button flatten" href="#">ഫ്ലാറ്റ് ആക്കുക</a>').on('click',{me:this},function(e){
 				e.preventDefault();
 				var sim = e.data.me;
 				var ob = sim.omega_b.value;
