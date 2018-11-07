@@ -29,7 +29,12 @@ h1 small {
 }
 h3 { margin-top: 32px; }
 h3:first-child { margin-top: 0px;}
-p { margin-bottom: 0px; }
+
+p { margin-bottom: 0px;
+	font-size:15px;
+	line-height: 32px;
+
+}
 /* Colours from RS Summer Exhibition 2013 site */
 a { color: #E13F29; text-decoration: none; }
 a:hover { color: #F16F25; text-decoration: underline; }
